@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:900|Open+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+}
+
+.container {
+  padding: 0.6rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  padding: 0.6rem;
+  color: rgb(148, 148, 148);
+  font-family: "Catamaran", "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  border-bottom: 3px solid #e22222;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 3px;
+}
+
+/* Logos */
+
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+.cd-monogram {
+  padding: 0;
+  margin: 0px 0.5rem;
+  height: 20px;
+  width: auto;
+}
