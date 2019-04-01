@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Everett Dittmer</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section
+      id="home"
+      class="hero is-fullheight is-barber has-text-centered has-text-light"
+    >
+      <div class="hero-body">
+        <div class="container">
+          <p>
+            <strong class="has-text-orange">Everett Dittmer</strong> is a
+            father, husband, and friend working as an Audi Sales Specialist in
+            Des Moines, Iowa. He is an aspiring barber and a friendly guy.
+          </p>
+          <br />
+          <a href="#contact" class="button is-orange has-text-dark"
+            >Contact Him</a
+          >
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="hero is-fullheight is-dark is-bold has-text-centered"
+    >
+      <div class="hero-head">
+        <br />
+        <a href="#home"> <i class="fas fa-arrow-up fa-2x"></i> </a>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-2">Contact</h1>
+          <div class="columns is-vcentered">
+            <div class="column has-text-centered">
+              <ul>
+                <li>
+                  <a
+                    class="has-text-orange"
+                    href="mailto:everettdittmer@gmail.com"
+                    ><i class="far fa-envelope"></i> everettdittmer@gmail.com</a
+                  >
+                </li>
+                <br />
+                <li><i class="fas fa-phone"></i> +1 641-203-9062</li>
+                <br />
+              </ul>
+            </div>
+            <div class="column">
+              <form action="POST" data-netlify="true" name="contact">
+                <div class="field">
+                  <label class="label has-text-light" name="name">Name</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Everett Dittmer"
+                      name="name"
+                    />
+                  </div>
+                  <label class="label has-text-light">Email</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="hello@everett.pro"
+                      name="email"
+                    />
+                  </div>
+                  <label class="label has-text-light">Message</label>
+                  <textarea
+                    class="textarea"
+                    placeholder="Hi..."
+                    name="message"
+                  ></textarea>
+                  <div class="field">
+                    <br />
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                  <div class="control">
+                    <button class="button is-orange">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot has-text-centered">
+        <footer>
+          <span
+            >&copy; 2019 Everett Dittmer | Proudly made by:
+            <a target="_blank" href="https://chasedooley.com"
+              ><img
+                class="cd-monogram"
+                src="img/cd-monogram-color.png"
+                alt="Chase Dooley, web developer"/></a
+          ></span>
+        </footer>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
