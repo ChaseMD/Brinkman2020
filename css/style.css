@@ -1,3 +1,9 @@
+/* Colors reference: 
+blue #00164c 
+red #e22222 
+black-grey #171819
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Catamaran:900|Open+Sans");
 
 * {
@@ -6,29 +12,128 @@
 }
 
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
   padding: 0.6rem;
-  height: 80vh;
+  height: 77%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: black;
+  /* background: url("../img/background.jpg"); */
 }
 
-a {
-  padding: 0.6rem;
+.pledge-bar {
+  background: #e22222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 23%;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn-primary {
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 1rem;
+  transition: 400ms ease-in-out;
+  padding-top: 0.4rem;
+  margin-top: 1rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #b91818;
+}
+
+.btn-secondary {
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+  background: #e22222;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 1rem;
+  transition: 400ms ease-in-out;
+  padding: 0.4rem;
+  text-transform: uppercase;
+  font-family: "Catamaran", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: #b91818;
+}
+.pledgeCount {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.nav-item {
+  padding: 0.8rem;
   color: rgb(148, 148, 148);
   font-family: "Catamaran", "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-decoration: none;
   text-align: center;
 }
 
-a:hover {
+.nav-item:hover {
   border-bottom: 3px solid #e22222;
+}
+
+.current {
+  border-bottom: 3px solid #e22222;
+}
+
+.nav-item-active-white {
+  border-bottom: 3px solid #fff;
+}
+
+/* Navigation  */
+nav {
+  display: none;
+}
+
+.open-side-menu {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.close-side-menu {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  text-decoration: none;
+  color: #00164c;
+  font-size: 3rem;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .showcase {
@@ -37,14 +142,18 @@ a:hover {
   align-items: center;
 }
 
-footer {
-  position: absolute;
-  bottom: 3px;
-}
+/* footer {
+  display: flex;
+  justify-content: center;
+  background: #e22222;
+  height: 6%;
+  font-size: 1rem;
+  color: #fff;
+} */
 
 /* Logos */
-
 .logo {
+  padding: 40%;
   height: 150px;
   width: auto;
 }
@@ -52,6 +161,32 @@ footer {
 .cd-monogram {
   padding: 0;
   margin: 0px 0.5rem;
-  height: 20px;
+  height: 1.2rem;
   width: auto;
+}
+
+/* Typography */
+.tagline {
+  position: absolute;
+  font-size: 1.3rem;
+  bottom: 30%;
+  color: #00164c;
+}
+
+h3,
+h4 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.nav-item,
+h1,
+h2 {
+  font-family: "Catamaran", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
 }

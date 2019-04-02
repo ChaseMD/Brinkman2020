@@ -8,13 +8,44 @@
     <title>Home | Brinkmann for Our Supreme Leader</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <header>
         <nav>
-          <a href="about.html">About Her</a>
-          <a href="admin.html">Her Administration</a>
-          <a href="pledge.html">Get Involved</a>
+          <a class="nav-item current" href="index.html">Home</a>
+          <a class="nav-item" href="about.html">About Her</a>
+          <a class="nav-item" href="admin.html">Her Administration</a>
+          <a class="nav-item" href="about.html#agenda">Her Agenda</a>
+          <a class="nav-item" href="get-involved.html">Get Involved</a>
+          <a class="nav-item nav-item-active-white" href="shop.html"
+            >Buy Stuff</a
+          >
+          <a class="btn-secondary" href="get-involved.html#bankroll"
+            >Bankroll</a
+          >
         </nav>
+
+        <span class="open-side-menu">
+          <a href="#" onclick="openSideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#ffffff" stroke-width="3" />
+              <path d="M0,14 30,14" stroke="#ffffff" stroke-width="3" />
+              <path d="M0,23 30,23" stroke="#ffffff" stroke-width="3" />
+            </svg>
+          </a>
+        </span>
+
+        <div class="side-nav" id="side-menu">
+          <a class="close-side-menu" href="#" onclick="closeSideMenu()"
+            >&times;</a
+          >
+          <a class="nav-item current" href="index.html">Home</a>
+          <a class="nav-item" href="about.html">About Her</a>
+          <a class="nav-item" href="admin.html">Her Administration</a>
+          <a class="nav-item" href="about.html#agenda">Her Agenda</a>
+          <a class="nav-item" href="get-involved.html">Get Involved</a>
+          <a class="nav-item nav-item-active-red" href="shop.html">Buy Stuff</a>
+          <a class="nav-item" href="get-involved.html#bankroll">Bankroll</a>
+        </div>
       </header>
       <section class="showcase">
         <img
@@ -24,28 +55,24 @@
         />
         <h2 class="tagline">Make The World Great Again!</h2>
       </section>
-      <div class=""></div>
-      <section class="pledge-bar">
-        <span id="supportCount"></span>
-        <h3>have pledged to Brinkmann - Will You?</h3>
-        <button id="#pledgeButton">Pledge Now!</button>
-      </section>
-      <section class="pledge-list">
-        <h3>Those who have already pledged!</h3>
-      </section>
-      <footer>
-        <p>
-          Made by
-          <a class="img-link" href="http://chasedooley.com" target="_blank"
-            ><img
-              class="cd-monogram"
-              src="img/cd-monogram-color.png"
-              alt="Chase Dooley, web developer"
-          /></a>
-        </p>
-      </footer>
     </div>
-
+    <section class="pledge-bar">
+      <span class="pledgeCount">2,395,921</span>
+      <h3>people have pledged to Brinkmann</h3>
+      <h4>Will You?</h4>
+      <a class="btn-primary" href="support.html#pledge">Pledge Now!</a>
+    </section>
+    <!-- <footer>
+      <p>
+        Made by
+        <a class="img-link" href="http://chasedooley.com" target="_blank"
+          ><img
+            class="cd-monogram"
+            src="img/cd-monogram-color.png"
+            alt="Chase Dooley, web developer"
+        /></a>
+      </p>
+    </footer> -->
     <script src="js/main.js"></script>
   </body>
 </html>
