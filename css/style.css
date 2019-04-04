@@ -2,6 +2,7 @@
 blue #00164c 
 red #e22222 
 black-grey #171819
+light-grey #878a90
 */
 
 @import url("https://fonts.googleapis.com/css?family=Catamaran:900|Open+Sans");
@@ -18,6 +19,14 @@ body {
 }
 
 .container {
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+}
+
+.landing {
   padding: 0.6rem;
   height: 77%;
   display: flex;
@@ -67,8 +76,9 @@ body {
   font-size: 1rem;
   transition: 400ms ease-in-out;
   padding: 0.4rem;
+  margin-left: 0.4rem;
   text-transform: uppercase;
-  font-family: "Catamaran", "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .btn-secondary:hover,
@@ -82,7 +92,7 @@ body {
 
 .nav-item {
   padding: 0.8rem;
-  color: rgb(148, 148, 148);
+  color: #878a90;
   font-family: "Catamaran", "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
@@ -114,11 +124,11 @@ nav {
 
 .close-side-menu {
   position: absolute;
-  top: 12px;
-  left: 15px;
+  top: 2px;
+  right: 35px;
   text-decoration: none;
   color: #00164c;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .side-nav {
@@ -131,15 +141,23 @@ nav {
   background: #fff;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
-  display: inline-flex;
+  transition: 0.4s;
+  display: flex;
   flex-direction: column;
+}
+
+.side-nav .nav-item {
+  padding: 1rem 0rem;
 }
 
 .showcase {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about {
+  background: red;
 }
 
 /* footer {
@@ -153,8 +171,13 @@ nav {
 
 /* Logos */
 .logo {
-  padding: 40%;
+  padding-top: 40%;
   height: 150px;
+  width: auto;
+}
+
+.nav-logo {
+  height: 65px;
   width: auto;
 }
 
@@ -190,3 +213,20 @@ body {
   font-size: 1.3rem;
   color: #fff;
 }
+
+@media (min-width: 479px) {
+}
+
+@media (min-width: 750px) {
+  nav {
+    display: block;
+  }
+  .nav-item {
+    font-size: 0.8rem;
+  }
+  .open-side-menu {
+    display: none;
+  }
+}
+
+/* @meda (min-width: 1080px); */
