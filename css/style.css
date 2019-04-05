@@ -32,8 +32,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: black;
-  /* background: url("../img/background.jpg"); */
+  background: url("../img/military-woman-staring.jpg") no-repeat;
+  background-size: cover;
 }
 
 .pledge-bar {
@@ -120,6 +120,12 @@ nav {
   position: absolute;
   top: 12px;
   right: 12px;
+  padding: 0.8rem;
+  color: #fff;
+  font-family: "Catamaran", "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 .close-side-menu {
@@ -150,12 +156,6 @@ nav {
   padding: 1rem 0rem;
 }
 
-.showcase {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .about {
   background: red;
 }
@@ -171,9 +171,8 @@ nav {
 
 /* Logos */
 .logo {
-  padding-top: 40%;
-  height: 150px;
-  width: auto;
+  width: 80%;
+  padding-bottom: 1rem;
 }
 
 .nav-logo {
@@ -188,12 +187,22 @@ nav {
   width: auto;
 }
 
+/* Showcase */
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+}
+
 /* Typography */
 .tagline {
-  position: absolute;
-  font-size: 1.3rem;
-  bottom: 30%;
-  color: #00164c;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline h1 {
 }
 
 h3,
@@ -215,9 +224,12 @@ body {
 }
 
 @media (min-width: 479px) {
+  .tagline {
+    font-size: 1.5rem;
+  }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 835px) {
   nav {
     display: block;
   }
@@ -226,6 +238,10 @@ body {
   }
   .open-side-menu {
     display: none;
+  }
+  .landing {
+    background: url("../img/happy-oldman.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
