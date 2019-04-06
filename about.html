@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>About Brinkmann For Our Supreme Leader</title>
   </head>
   <body>
     <header class="container">
+      <!-- Main Nav for Fullscreen viewports -->
       <nav>
-        <a href="index.html"
-          ><img class="nav-logo" src="img/main-logo-white.png" alt="Home"
-        /></a>
         <a class="nav-item current" href="about.html">About Her</a>
         <a class="nav-item" href="about.html#her-team">Her Team</a>
         <a class="nav-item" href="about.html#agenda">Her Agenda</a>
@@ -20,26 +24,84 @@
         <a class="nav-item nav-item-active-white" href="shop.html">Buy Stuff</a>
         <a class="btn-secondary" href="get-involved.html#bankroll">Bankroll</a>
       </nav>
+      <a href="index.html"
+        ><img class="nav-logo" src="img/main-logo-white.png" alt="Home"
+      /></a>
 
-      <span class="open-side-menu">
-        <a class="nav-item" href="#" onclick="openSideMenu()">
-          MENU
-        </a>
-      </span>
+      <!-- Mobile nav -->
+      <a class="open-side-menu" href="#" onclick="openSideMenu()">
+        MENU
+      </a>
+
+      <div class="sub-nav">
+        <a class="sub-nav-item" href="#about-her">About Her</a>
+        <a class="sub-nav-item" href="#her-team">Her Team</a>
+        <a class="sub-nav-item" href="#her-agenda">Her Agenda</a>
+        <a class="sub-nav-item" href="#faq">FAQ</a>
+      </div>
 
       <div class="side-nav" id="side-menu">
         <a class="close-side-menu" href="#" onclick="closeSideMenu()"
           >&times;</a
         >
-        <a class="nav-item current" href="index.html">Home</a>
-        <a class="nav-item" href="about.html">About Her</a>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item current" href="about.html">About Her</a>
         <a class="nav-item" href="admin.html">Her Administration</a>
         <a class="nav-item" href="about.html#agenda">Her Agenda</a>
         <a class="nav-item" href="get-involved.html">Get Involved</a>
-        <a class="nav-item nav-item-active-red" href="shop.html">Buy Stuff</a>
+        <a class="nav-item" href="shop.html">Buy Stuff</a>
         <a class="nav-item" href="get-involved.html#bankroll">Bankroll</a>
       </div>
     </header>
+    <main>
+      <article class="anchor">
+        <a id="about-her"></a>
+        <h3 class="text-is-blue">
+          <i class="fas fa-angle-right fa-lg text-is-red"></i> About Brinkmann
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
+          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
+          iste!
+        </p>
+      </article>
+      <br />
+      <article class="anchor">
+        <a id="her-team"></a>
+        <h3 class="text-is-blue">
+          <i class="fas fa-angle-right fa-lg text-is-red"></i> Her Team
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
+          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
+          iste!
+        </p>
+      </article>
+      <br />
+      <article class="anchor">
+        <a id="her-agenda"></a>
+        <h3 class="text-is-blue">
+          <i class="fas fa-angle-right fa-lg text-is-red"></i> Her Agenda
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
+          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
+          iste!
+        </p>
+      </article>
+      <br />
+      <article class="anchor">
+        <a id="faq"></a>
+        <h3 class="text-is-blue">
+          <i class="fas fa-angle-right fa-lg text-is-red"></i> FAQ
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
+          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
+          iste!
+        </p>
+      </article>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
