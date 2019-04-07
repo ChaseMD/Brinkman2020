@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: black;
+  background: #00164c;
   position: fixed;
   z-index: 1;
 }
@@ -170,8 +170,11 @@ nav {
 .sub-nav {
   position: absolute;
   top: 100%;
-  background: black;
+  background: #fff;
+  height: 30px;
   width: 100%;
+  text-align: center;
+  box-shadow: 0px 1px 5px #878787;
 }
 
 .sub-nav-item {
@@ -240,7 +243,8 @@ nav {
 .nav-item,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Catamaran", "Open Sans", Arial, Helvetica, sans-serif;
 }
 
