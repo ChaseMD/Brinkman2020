@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Buy Stuff | Brinkmann for Our Supreme Leader</title>
+  </head>
+  <body>
+    <section class="hero is-blue">
+      <div class="hero-head">
+        <nav
+          class="navbar is-info"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div class="navbar-brand">
+            <a href="index.html"
+              ><img
+                class="nav-logo"
+                src="img/main-logo-white.png"
+                alt="Brinkmann 2020"
+            /></a>
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start"></div>
+
+            <div class="navbar-end">
+              <a href="index.html" class="navbar-item">
+                Home
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable ">
+                <a href="about.html" class="navbar-link is-arrowless">
+                  About
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a href="about.html#her" class="navbar-item">
+                    About Brinkmann
+                  </a>
+                  <a href="about.html#team" class="navbar-item">
+                    Her Team
+                  </a>
+                  <a href="about.html#agenda" class="navbar-item">
+                    Her Agenda
+                  </a>
+                </div>
+              </div>
+
+              <a href="get-involved.html" class="navbar-item">
+                Get Involved
+              </a>
+
+              <a href="store.html" class="navbar-item is-active">
+                Buy Stuff
+              </a>
+
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a href="tribute.html" class="button is-danger">
+                    <strong>Pay Tribute</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title has-text-light">Buy Our Stuff -</h1>
+            </div>
+            <div class="column">
+              <div class="shopping">
+                <a
+                  id="openBagBtn"
+                  class="button is-info is-medium has-text-light"
+                >
+                  <span class="icon">
+                    <i class="fas fa-shopping-bag fa-lg"></i>
+                  </span>
+                  <span id="bagQuantity" class="is-size-4">0</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div id="shoppingModal" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">Your Shopping Bag</p>
+            </header>
+            <section class="modal-card-body">
+              <div id="notif"></div>
+              <table class="table is-fullwidth">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="bagitems"></tbody>
+                <tfoot>
+                  <tr class="title is-5">
+                    <th>Subtotal:</th>
+                    <th>$<span id="subtotal">0</span></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </section>
+            <footer class="modal-card-foot">
+              <button
+                onclick="checkoutInit()"
+                id="checkoutBtn"
+                class="button is-success"
+              >
+                Checkout
+              </button>
+              <button id="closeBagBtn" class="button">Close</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <main class="container">
+      <div class="notification is-info is-size-5">
+        <i class="fas fa-shipping-fast fa-lg"></i>
+        Fast n' free shipping on orders over $129! Use promo code
+        <strong>BRINK2020</strong> at check out.
+      </div>
+      <!-- First row -->
+      <div class="columns">
+        <div class="column">
+          <!-- White Shirt -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/tshirt-color.png"
+                  alt="Image of white t-shirt with
+                Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    White T-Shirt - $35.99
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <p>
+                  A soft and premium white T-shirt sourced from recycle
+                  materials and non-GMO recources. Made by skilled T-shirt
+                  artisians in the exotic mountains of China. Show your support
+                  for Brinkmann by buying 12!
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select id="wtsQuantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button
+                      id="addwtsToBag"
+                      onclick="addToBag('wts')"
+                      class="button is-info"
+                    >
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <!-- Ball Cap -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/cap-color.png"
+                  alt="Image of white t-shirt with
+                    Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Ball Cap - $24.96
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <span class="tag is-danger">Sold out</span>
+                <p>
+                  An exquisite black and white hat with premium stitching.
+                  Materials are open-sourced from the best manufacturers in
+                  Thailand. This hat is more luxurious than any comparable hat.
+                  Show support for buying 5!
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button class="button is-info" disabled>
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <!-- Greeting Cards -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/greeting-card.jpg"
+                  alt="Image of white t-shirt with
+                Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Greeting Cards - $5/ea
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <span class="tag is-danger">Sold out</span>
+                <p>
+                  A premium greeting card printed on premium paper using premium
+                  inks sourced from premium Malaysian companies. With an
+                  absolutely premium finish, this greeting card will tell
+                  everyone that you're premium.
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button disabled class="button is-info">
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second row -->
+      <div class="columns">
+        <div class="column">
+          <!-- White hoodie -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/hoodie-color.png"
+                  alt="Image of white t-shirt with
+                  Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    White Hoodie - $89.99
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <span class="tag is-danger">Sold out</span>
+                <p>
+                  A soft and premium white hoodie sourced locally in Indonesia.
+                  This hoodie will keep your warm and comfortable in almost any
+                  weather condition. The perfect gift for someone you love, or
+                  anyone really.
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select id="item1Quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button disabled class="button is-info">
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <!-- Black Shirt -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/tshirt-black.png"
+                  alt="Image of white t-shirt with
+                      Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Black T-Shirt - $39.99
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <span class="tag is-success">HOT!</span>
+                <p>
+                  A soft and premium black T-shirt sourced from recycle
+                  materials and non-GMO recources. Made by skilled T-shirt
+                  artisians in the exotic mountains of China. So much better
+                  than other T-shirts.
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select id="btsQuantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button onclick="addToBag('bts')" class="button is-info">
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <!-- Black hoodie -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/hoodie-black.png"
+                  alt="Image of white t-shirt with
+                  Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Black Hoodie - $101.99
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <span class="tag is-warning">Low Stock - Buy now!</span>
+                <p>
+                  A soft and premium black hoodie sourced locally in Indonesia.
+                  This hoodie will keep your warm and comfortable in almost any
+                  weather condition. The best black hoodie one could buy, on
+                  this site.
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select id="bhdQuantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button onclick="addToBag('bhd')" class="button is-info">
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third row -->
+      <div class="columns">
+        <div class="column">
+          <!-- Billboard -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/billboard.jpg"
+                  alt="Image of white t-shirt with
+                    Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Billboard - $349.99/mo
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <p>
+                  The best way to show your support for Brinkmann - sponsor a
+                  billboard! Large and proud, these billboards are positioned in
+                  the best places your money can buy. Make your friends jealous
+                  by buying two!
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select id="bilQuantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button onclick="addToBag('bil')" class="button is-info">
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <!-- Biz Cards -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/business-card.jpg"
+                  alt="Image of white t-shirt with
+                        Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    25ct Premium Business Cards - $31.99
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <p>
+                  Build rapport that matters with these professional and premium
+                  Brinkmann 2020 business cards. Printed using the best
+                  materials, these cards will leave a lasting impression on
+                  anyone.
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select id="bcdQuantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button onclick="addToBag('bcd')" class="button is-info">
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <!-- Enamel Cup -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img/enamel-cup.jpg"
+                  alt="Image of white t-shirt with
+                    Brinkmann for Our Supreme Leader 2020 logo in the center"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Enamel Cup - $167.99
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                <span class="tag is-danger">Sold out</span>
+                <p>
+                  Show off to your friends that you mean business by drinking
+                  your premium, imported Colombian coffee in this premium and
+                  luxurious enamel cup. Made by enamel experts in northern
+                  China, this cup will you significantly happier.
+                </p>
+                <!-- Quantity Selector & Add to Bag -->
+                <div class="field has-addons">
+                  <div class="control">
+                    <button type="submit" class="button is-static">
+                      Qty:
+                    </button>
+                  </div>
+                  <div class="control is-expanded">
+                    <div class="select is-fullwidth">
+                      <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button disabled class="button is-info">
+                      Add to Bag
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="hero-body"></div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

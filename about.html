@@ -6,98 +6,198 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>About Brinkmann For Our Supreme Leader</title>
+    <title>About | Brinkmann for Our Supreme Leader</title>
   </head>
   <body>
-    <header class="container">
-      <!-- Main Nav for Fullscreen viewports -->
-      <nav>
-        <a class="nav-item current" href="about.html">About</a>
-        <a class="nav-item" href="get-involved.html">Get Involved</a>
-        <a class="nav-item nav-item-active-white" href="shop.html">Buy Stuff</a>
-        <a class="btn-secondary" href="get-involved.html#bankroll">Bankroll</a>
-      </nav>
-      <a href="index.html"
-        ><img class="nav-logo" src="img/main-logo-white.png" alt="Home"
-      /></a>
-
-      <!-- Mobile nav -->
-      <a class="open-side-menu" href="#" onclick="openSideMenu()">
-        MENU
-      </a>
-
-      <div class="sub-nav">
-        <a class="sub-nav-item" href="#about-her">About Her</a>
-        <a class="sub-nav-item" href="#her-team">Her Team</a>
-        <a class="sub-nav-item" href="#her-agenda">Her Agenda</a>
-        <a class="sub-nav-item" href="#faq">FAQ</a>
-      </div>
-
-      <div class="side-nav" id="side-menu">
-        <a class="close-side-menu" href="#" onclick="closeSideMenu()"
-          >&times;</a
+    <section class="hero is-blue">
+      <div class="hero-head">
+        <nav
+          class="navbar is-info"
+          role="navigation"
+          aria-label="main navigation"
         >
-        <a class="nav-item" href="index.html">Home</a>
-        <a class="nav-item current" href="about.html">About</a>
-        <a class="nav-item" href="get-involved.html">Get Involved</a>
-        <a class="nav-item" href="shop.html">Buy Stuff</a>
-        <a class="nav-item" href="get-involved.html#bankroll">Bankroll</a>
+          <div class="navbar-brand">
+              <a href="index.html"
+              ><img
+                class="nav-logo"
+                src="img/main-logo-white.png"
+                alt="Brinkmann 2020"
+            /></a>
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start"></div>
+
+            <div class="navbar-end">
+              <a href="index.html" class="navbar-item">
+                Home
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable ">
+                <a href="about.html" class="navbar-link is-arrowless is-active">
+                  About
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a href="about.html#her" class="navbar-item">
+                    About Brinkmann
+                  </a>
+                  <a href="about.html#team" class="navbar-item">
+                    Her Team
+                  </a>
+                  <a href="about.html#agenda" class="navbar-item">
+                    Her Agenda
+                  </a>
+                </div>
+              </div>
+
+              <a href="get-involved.html" class="navbar-item">
+                Get Involved
+              </a>
+
+              <a href="store.html" class="navbar-item">
+                Buy Stuff
+              </a>
+
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a href="tribute.html" class="button is-danger">
+                    <strong>Pay Tribute</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </header>
-    <main>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-light">About -</h1>
+        </div>
+      </div>
+    </section>
+    <br />
+    <main class="container">
       <article class="anchor">
-        <a id="about-her"></a>
-        <h3 class="text-is-blue">
-          <i class="fas fa-angle-right fa-lg text-is-red"></i> About Brinkmann
+        <a id="her"></a>
+        <h3 class="is-size-5">
+          <i class="fas fa-angle-right fa-lg has-text-red"></i>
+          <strong class="has-text-blue">About Brinkmann</strong>
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
-          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
-          iste!
+          Ms. Lindsay Brinkmann is a social studies teacher at DeLand High
+          School, teaching awesome classes on American History among other
+          historical periods. She connects with her students to build a
+          successful learning environment, and builds a faithful following
+          that's lead to the creation of the Brinkmann 2020 campaign. Ms.
+          Brinkmann started this campaign to do a great service to the world. By
+          enacting strict, just laws and demanding high standards from society,
+          she hopes to change the world for the better. In her spare time, she
+          enjoys sewing quilts and watching Netflix.
         </p>
       </article>
       <br />
       <article class="anchor">
-        <a id="her-team"></a>
-        <h3 class="text-is-blue">
-          <i class="fas fa-angle-right fa-lg text-is-red"></i> Her Team
+        <a id="team"></a>
+        <h3 class="is-size-5">
+          <i class="fas fa-angle-right fa-lg has-text-red"></i>
+          <strong class="has-text-blue">Her Team</strong>
         </h3>
+        <strong>Mr. Wetter, Royal President of Shennigans</strong>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
-          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
-          iste!
+          Mr. Wetter is the department head of social studies at DeLand High,
+          teaching human geography, philosophy, and more. He joined the
+          Brinkmann 2020 campaign because he believes in the movement, striving
+          to do good and promote loyalty. Mr. Wetter's role includes planning
+          and strategy. When he's not working, he's eating Chinese, playing
+          tennis, wearing sweaters, and
+          <a target="_blank" href="https://thewetterstory.weebly.com"
+            >going on adventures while listening to his favourite beats.</a
+          >
+        </p>
+        <br />
+        <strong>Mrs. Goldy, Royal Psychologist</strong>
+        <p>
+          Mrs. Goldy is a social studies teacher at DeLand High School, teaching
+          classes on history and psychology. She joined the Brinkmann 2020
+          compaign to do her part in making the world great again. Her role is
+          assessing the psychological state of Brinkmann's people. She enjoys
+          spending time with family and friends outside of the movement.
+        </p>
+        <br />
+        <strong>Mrs. Nehrig, Royal Communist of Common Goods</strong>
+        <p>
+          Mrs. Nehrig is the IB Program coordinator for DeLand High School, as
+          well as an English teacher. She joined the movement to make the future
+          for her child and students a better place. Her role within the
+          movement includes the allocation of common goods, including clipart,
+          pencils, and diplomas. She enjoys reading outside of work.
+        </p>
+        <br />
+        <strong>Mrs. Sniffen, Royal Communicator</strong>
+        <p>
+          Mrs. Sniffen is an English and Journalism teacher at DeLand High. She
+          believes the Brinkmann 2020 campaign is awesome, and joined to make it
+          succeed. Her role includes communicating the thoughts and wishes of
+          the Brinkmann cabinet to the common folk. When she's not working,
+          she's teaching kids to write creatively, read, and to be creative
+          themselves.
         </p>
       </article>
       <br />
       <article class="anchor">
-        <a id="her-agenda"></a>
-        <h3 class="text-is-blue">
-          <i class="fas fa-angle-right fa-lg text-is-red"></i> Her Agenda
+        <a id="agenda"></a>
+        <h3 class="is-size-5">
+          <i class="fas fa-angle-right fa-lg has-text-red"></i>
+          <strong class="has-text-blue">Her Agenda</strong>
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
-          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
-          iste!
+          Ms. Brinkmann's agenda is a five-year plan condensed into a four-year
+          plan which is really a terminal plan. It consists of:
+          <div class="content"><ul>
+              <li>Enact a unified government across the world</li>
+              <li>Establish a single prison system, the Spork Islands Complex, for the world</li>
+              <li>Improve education for all, and make higher education better and cheaper</li>
+              <li>Improve the economy</li>
+              <li>Disprove the existence of robotic dolphins</li>
+              <li>Build an underwater base</li>
+              <li>Improve welfare for all</li>
+              <li>Ban ignorance</li>
+              <li>Determine the Fundamental Theorem of the Paranormal</li>
+              <li>Establish some form of world peace</li>
+              <li>Prevent natural disasters and reverse climate change</li>
+              <li>Establish a world healthcare for all</li>
+              <li>and more...</li>
+            </ul></div>
         </p>
       </article>
-      <br />
-      <article class="anchor">
-        <a id="faq"></a>
-        <h3 class="text-is-blue">
-          <i class="fas fa-angle-right fa-lg text-is-red"></i> FAQ
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
-          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
-          iste!
-        </p>
-      </article>
+      <section class="hero">
+          <div class="hero-body">
+           
+          </div>
+        </section>
     </main>
+
     <script src="js/main.js"></script>
   </body>
 </html>

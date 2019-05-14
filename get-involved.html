@@ -6,185 +6,363 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Get Involved with Brinkmann For Our Supreme Leader</title>
+    <title>Get Involved | Brinkmann for Our Supreme Leader</title>
   </head>
   <body>
-    <header class="container">
-      <!-- Main Nav for Fullscreen viewports -->
-      <nav>
-        <a class="nav-item" href="about.html">About</a>
-        <a class="nav-item current" href="get-involved.html">Get Involved</a>
-        <a class="nav-item nav-item-active-white" href="shop.html">Buy Stuff</a>
-        <a class="btn-secondary" href="get-involved.html#bankroll">Bankroll</a>
-      </nav>
-      <a href="index.html"
-        ><img class="nav-logo" src="img/main-logo-white.png" alt="Home"
-      /></a>
-
-      <!-- Mobile nav -->
-      <a class="open-side-menu" href="#" onclick="openSideMenu()">
-        MENU
-      </a>
-
-      <div class="sub-nav">
-        <a class="sub-nav-item" href="#pledge">Pledge</a>
-        <a class="sub-nav-item" href="#bankroll">Bankroll</a>
-      </div>
-
-      <div class="side-nav" id="side-menu">
-        <a class="close-side-menu" href="#" onclick="closeSideMenu()"
-          >&times;</a
+    <section class="hero is-blue">
+      <div class="hero-head">
+        <nav
+          class="navbar is-info"
+          role="navigation"
+          aria-label="main navigation"
         >
-        <a class="nav-item" href="index.html">Home</a>
-        <a class="nav-item current" href="about.html">About</a>
-        <a class="nav-item" href="get-involved.html">Get Involved</a>
-        <a class="nav-item" href="shop.html">Buy Stuff</a>
-        <a class="nav-item" href="get-involved.html#bankroll">Bankroll</a>
-      </div>
-    </header>
-    <main>
-      <article class="anchor">
-        <a id="pledge"></a>
-        <h3 class="text-is-blue">
-          <i class="fas fa-angle-right fa-lg text-is-red"></i> Pledge to
-          Brinkmann
-        </h3>
-        <p>
-          <span>2,359,256</span> people have pledged to Brinkmann for Our
-          Supreme Leader. Be apart of a revolution and pledge now!
-        </p>
-        <br />
-        <form>
-          <label for="name">Your Name</label> <br />
-          <input type="text" name="name" placeholder="John Doe" />
-          <br />
-          <label for="pledge-commitment"
-            >Do you pledge yourself to our humble leader?</label
-          >
-          <br />
-          <input type="radio" name="pledge-commitment" /> Yes <br />
-          <input type="radio" name="pledge-commitment" /> Yes!! <br />
-          <input type="radio" name="pledge-commitment" /> Absolutely! <br />
-          <input type="radio" name="pledge-commitment" /> Yeah!!! <br />
-          <input type="radio" name="pledge-commitment" /> I love Mrs. Neh...
-          Brinkmann! <br />
-          <input type="radio" name="pledge-commitment" /> Yes! <br />
-          <input type="radio" name="pledge-commitment" /> I thought you'd never
-          ask! <br />
-          <input type="radio" name="pledge-commitment" /> DAMN RIGHT, I DO
-          <br />
-          <input type="radio" name="pledge-commitment" /> I grant her my soul!
-          <br />
-          <input type="radio" name="pledge-commitment" /> Heckin' Yes! <br />
-          <input type="radio" name="pledge-commitment" /> World Domination,
-          count me in! <br />
-          <input type="radio" name="pledge-commitment" /> Uh, like totally yeah!
-          <br />
-
-          <div>
-            <label>
-              Are you prepared to complete any task, no matter how ludicrous or
-              deadly?
-            </label>
-            <input type="radio" name="pledge-commitment" /> Yes <br />
-            <input type="radio" name="pledge-commitment" /> Yes!! <br />
-            <input type="radio" name="pledge-commitment" /> Sure, why not!
-            <br />
+          <div class="navbar-brand">
+              <a href="index.html"
+              ><img
+                class="nav-logo"
+                src="img/main-logo-white.png"
+                alt="Brinkmann 2020"
+            /></a>
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
           </div>
-          <label>Please select your new occupation:</label>
-          <select>
-            <option>Hard Worker</option>
-            <option>Hard Worker</option>
-            <option>Hard Worker</option>
-            <option>Rock Crusher</option>
-            <option>Tree Chopper</option>
-            <option>Big Cat Snack</option>
-            <option>Taste Tester who dosen't make it</option>
-            <option
-              >Taste Tester who dose make it (but with permanent
-              injuries)</option
-            >
-            <option
-              >Person who gets bitten by a venomous snake sent to harm
-              Brinkmann</option
-            >
-            <option>Nonstop Hard Worker</option>
-            <option>24Hr Hard Worker</option>
-            <option>Self-employed at Spork Island</option>
-            <option>Self-employed at Maximum Spork Island</option>
-            <option>Fluid Collector in Body Desposal Unit</option>
-            <option>Senior Hard Worker who works harder</option>
-            <option>Overachiever underachieves at everything</option>
-            <option>Bear Repellant</option>
-            <option>Target Practice</option>
-            <option>Animal wrangler who loses often</option>
-            <option
-              >Perpetual College Student who continues to fail classes</option
-            >
-            <option
-              >Perpetual High School Student who continues to fail
-              classes</option
-            >
-            <option
-              >Perpetual Middle School Student who continues to fail
-              classes</option
-            >
-            <option>Questionable Substances Tester</option>
-            <option>Human Sacrifice</option>
-            <option>Hard Worker</option>
-            <option>Person who gets attacked by man-eating squirrels</option>
-            <option>Person who argues with a signpost and loses</option>
-          </select>
-          <label for="">Do you agree that you are:</label>
-          <ul>
-            <li>
-              Prohibited from plotting against the Brinkmann Administration
-            </li>
-            <li>
-              Prohibited from conspiring against the Brinkmann Administration
-            </li>
-            <li>Prohibited from lying to the Brinkmann Administration</li>
-            <li>
-              Prohibited from scheming against the Brinkmann Administration
-            </li>
-            <li>
-              Prohibited from developing machinations against the Brinkmann
-              Administration
-            </li>
-            <li>
-              Always guilty of crime, regardless if you did it, if the Brinkmann
-              Administration says you're guilty
-            </li>
-            <li>Are not allowed to switch Occupations</li>
-            <li>
-              Are not allowed to die without approval, else your family will be
-              put to death
-            </li>
-            <li>
-              Not allowed to be within 100 miles of Brinkmann or any member of
-              the Brinkmann Administration. Very bad things will happen to you.
-            </li>
-          </ul>
-        </form>
-      </article>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start"></div>
+
+            <div class="navbar-end">
+              <a href="index.html" class="navbar-item">
+                Home
+              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable ">
+                <a href="about.html" class="navbar-link is-arrowless">
+                  About
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a href="about.html#her" class="navbar-item">
+                    About Brinkmann
+                  </a>
+                  <a href="about.html#team" class="navbar-item">
+                    Her Team
+                  </a>
+                  <a href="about.html#agenda" class="navbar-item">
+                    Her Agenda
+                  </a>
+                </div>
+              </div>
+
+              <a href="get-involved.html" class="navbar-item  is-active">
+                Get Involved
+              </a>
+
+              <a href="store.html" class="navbar-item">
+                Buy Stuff
+              </a>
+
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a href="tribute.html" class="button is-danger">
+                    <strong>Pay Tribute</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-light">Get Involved -</h1>
+        </div>
+      </div>
+    </section>
+    <br />
+    <main class="container">
+      <h3 class="is-size-5">
+        <i class="fas fa-angle-right fa-lg has-text-red"></i>
+        <strong class="has-text-blue">Pledge Yourself to Brinkmann</strong>
+      </h3>
+      <p>
+        Over 2.4 million people have pledged themselves to Brinkmann. Be apart
+        of a revolution and pledge today!
+      </p>
       <br />
-      <article class="anchor">
-        <a id="bankroll"></a>
-        <h3 class="text-is-blue">
-          <i class="fas fa-angle-right fa-lg text-is-red"></i> Her Team
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti
-          dicta commodi aspernatur tempore obcaecati amet aliquid quas alias
-          iste!
-        </p>
-      </article>
+      <form>
+        <div class="field">
+          <label class="label">Your Full Name</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              placeholder="First, Middle, Last"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Do you pledge yourself to Brinkmann?</label>
+          <span class="select">
+            <select>
+              <option>Yes</option>
+              <option>Yes!!</option>
+              <option>Absolutely!</option>
+              <option>I love Mrs. Neh... Brinkmann!</option>
+              <option>Yes!</option>
+              <option>I thought you'd never ask!</option>
+              <option>DAMN RIGHT, I DO!</option>
+              <option>I GRANT HER MY SOUL!</option>
+              <option>I grant her my soul!</option>
+              <option>Heckin' Yes!</option>
+              <option>World domination, count me in!</option>
+            </select>
+          </span>
+        </div>
+        <div class="field">
+          <label class="label"
+            >Are you prepared to complete any task, no matter how ludicrous or
+            dangerous?</label
+          >
+          <span class="select">
+            <select>
+              <option>Yes</option>
+              <option>Yes!!</option>
+              <option>Sure, why not!</option>
+            </select>
+          </span>
+        </div>
+        <div class="field">
+          <label class="label"
+            >Please select your new, <em>permanent</em> occupation:</label
+          >
+          <span class="select">
+            <select>
+              <option>Hard Worker</option>
+              <option>Hard Worker</option>
+              <option>Hard Worker</option>
+              <option>Rock Crusher</option>
+              <option>Tree Chopper</option>
+              <option>Big Cat Snack</option>
+              <option>Taste Tester who dosen't make it</option>
+              <option
+                >Taste Tester who does make it (but with permanent
+                injuries)</option
+              >
+              <option
+                >Person who gets bitten by a venomous snake sent to harm
+                Brinkmann</option
+              >
+              <option>Nonstop Hard Worker</option>
+              <option>24Hr Hard Worker</option>
+              <option
+                >College student who is three years into their degree but their
+                universty forces them to take another four years to
+                finish</option
+              >
+              <option>Self-employed at Spork Island</option>
+              <option>Self-employed at Maximum Spork Island</option>
+              <option>Fluid Collector in Body Desposal Unit</option>
+              <option>Senior Hard Worker who works harder</option>
+              <option>Overachiever underachieves at everything</option>
+              <option>Bear Repellant</option>
+              <option>Target Practice</option>
+              <option>Animal wrangler who loses often</option>
+              <option
+                >Perpetual College Student who continues to fail classes</option
+              >
+              <option
+                >Perpetual High School Student who continues to fail
+                classes</option
+              >
+              <option
+                >Perpetual Middle School Student who continues to fail
+                classes</option
+              >
+              <option>Questionable Substances Tester</option>
+              <option>Human Sacrifice</option>
+              <option>Hard Worker</option>
+              <option>Person who gets attacked by man-eating squirrels</option>
+              <option>Person who argues with a signpost and loses</option>
+              <option>Unpaid, Disrespected Campaign Volunteer </option>
+              <option>Underpaid, disrespected laborer</option>
+              <option>Underpaid, disrespected factory worker</option>
+              <option>Ghost whisper who sucks at their job</option>
+              <option
+                >Poltergeist vanquisher who never vanquishes
+                poltergeists</option
+              >
+              <option>Person permanently banned from Chick-Fil-A</option>
+              <option
+                >Person who must watch reruns of Friends at 100% volume
+                forever</option
+              >
+              <option
+                >College student who overpaid on their degree by $150,000 and
+                will work in fast food for the rest of their lives</option
+              >
+            </select>
+          </span>
+          <div class="field">
+            <label class="label">Please read the following:</label>
+            <div class="content">
+              <ul>
+                <li>
+                  Prohibited from plotting against the Brinkmann Administration
+                </li>
+                <li>
+                  Prohibited from conspiring against the Brinkmann
+                  Administration
+                </li>
+                <li>Prohibited from lying to the Brinkmann Administration</li>
+                <li>
+                  Prohibited from scheming against the Brinkmann Administration
+                </li>
+                <li>
+                  Prohibited from developing machinations against the Brinkmann
+                  Administration
+                </li>
+                <li>
+                  Always guilty of crime, regardless if you did it, if the
+                  Brinkmann Administration says you're guilty
+                </li>
+                <li>Not allowed to switch Occupations</li>
+                <li>
+                  Not allowed to die without approval, else your family will be
+                  put to death
+                </li>
+                <li>
+                  Not allowed to be within 100 miles of Brinkmann or any member
+                  of the Brinkmann Administration. Very bad things will happen
+                  to you.
+                </li>
+                <li>
+                  Not allowed to purchase anything ever again, regardless of
+                  purpose, unless authorized
+                </li>
+                <li>
+                  Required to listen to the Brinkmann Adminstration's National
+                  Theme song at least 25 times per day, reciting Brinkmann's
+                  Pledge each time
+                </li>
+                <li>
+                  To adhere to the Brinkmann Administration's Laws and
+                  Regulations.
+                </li>
+                <li>
+                  To understand that there may be many more things that you must
+                  agreed to that are not listed here and may not be in writing
+                </li>
+                <li>
+                  You cannot engage in lawsuit again Brinkmann or anyone
+                  associated with the Brinkmann Administration
+                </li>
+              </ul>
+            </div>
+            <label class="label">Do you agree with the above?</label>
+          </div>
+          <label class="radio">
+            <input type="radio" name="member" />
+            Yes
+          </label>
+          <label class="radio">
+            <input type="radio" name="member" />
+            Of course I do!
+          </label>
+        </div>
+        <div class="field">
+          <label class="label">Please scream Brinkmann's Pledge aloud:</label>
+          <p>
+            I kneel, To be a loyal servant of our Leader! <br />
+            BRINKMANN! <br />
+            I work, To be a loyal servant of our Leader! <br />
+            BRINKMANN! <br />I know, To be a loyal servant of our Leader! <br />
+            BRINKMANN! <br />I pledge, To be a loyal servant of our Leader!
+            <br />BRINKMANN! <br />This is, Not a form of brainwashing.
+            <br />Freedom, Is for The Brinkmann Administration. <br />Feelings,
+            Are for the weak. <br />The weak, Don't survive. <br />For,
+            BRINKMANN! Love, BRINKMANN! <br />LONG LIVE THE BRINKMANN
+            ADMINISTRATION! <br />
+          </p>
+          <label class="label"
+            >Please read the following disclaimer. By pledging,
+          </label>
+          <div class="content">
+            <ul>
+              <li>
+                you acknowledge that all your personal processions, family,
+                pets, significant others, or anything else that has not been
+                labeled here, regardless of value, is now owned by our fair
+                leader, Ms. Brinkmann.
+              </li>
+              <li>
+                you agree that The Brinkmann Administration is not liable for
+                death, injury, loss of bodily fluids, emotional meltdowns,
+                desfucntions, crying, torture, or anything related that is not
+                listed here.
+              </li>
+              <li>
+                you understand that there may be information or circumstances
+                that this disclaimer does not express but still cover. The Word
+                of Brinkmann is limitless.
+              </li>
+            </ul>
+          </div>
+          <label class="label">Do you agree to the above?</label>
+          <label class="radio">
+            <input type="radio" name="member" />
+            Yes
+          </label>
+          <label class="radio">
+            <input type="radio" name="member" />
+            Yup!
+          </label>
+          <label class="radio">
+            <input type="radio" name="member" />
+            Great, sounds awesome!
+          <label class="radio">
+            <input type="radio" name="member" />
+            All hail Ms. Brinkmann!
+          </label>
+        </div>
+        <div class="field">
+            <label class="label">Please enter your full name as agreement to the pledge.</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="First, Middle, Last"
+              />
+            </div>
+            <br>
+            <div class="control">
+                <button class="button is-info is-large">Submit</button>
+              </div>
+              </div>
+      </form>
+      <section class="hero">
+          <div class="hero-body">
+          </div>
+        </section>
     </main>
+
     <script src="js/main.js"></script>
   </body>
 </html>
